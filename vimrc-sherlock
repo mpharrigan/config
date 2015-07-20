@@ -1,0 +1,39 @@
+execute pathogen#infect()
+call pathogen#helptags()
+
+set foldmethod=indent
+set foldlevel=99
+
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+inoremap jj <Esc>
+
+syntax on
+filetype on
+filetype plugin indent on
+let g:pyflakes_use_quickfix = 0
+
+let g:pep8_map='<leader>8'
+
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+au BufRead,BufNewFile *.md set filetype=markdown
+
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
+
+set wrap lbr
+vmap <silent> k gk
+vmap <silent> j gj
+nmap <silent> k gk
+nmap <silent> j gj
+imap <silent> <Up> <C-o>gk
+imap <silent> <Down> <C-o>gj
