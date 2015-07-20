@@ -23,6 +23,7 @@ shopt -s checkwinsize
 eval `$HOME/opt/keychain/keychain --agents ssh --eval id_rsa`
 source $HOME/opt/git/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE="yup"
+export GIT_PS1_SHOWUNTRACKEDFILES="yup"
 export GIT_PS1_SHOWUPSTREAM="verbose"
 export SLURM_TIME_FORMAT="relative"
 

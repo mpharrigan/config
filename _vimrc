@@ -1,5 +1,4 @@
 execute pathogen#infect()
-call pathogen#helptags()
 
 set foldmethod=indent
 set foldlevel=99
@@ -14,26 +13,13 @@ inoremap jj <Esc>
 syntax on
 filetype on
 filetype plugin indent on
-let g:pyflakes_use_quickfix = 0
-
-let g:pep8_map='<leader>8'
 
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
 
-set colorcolumn=80
-
 au BufRead,BufNewFile *.md set filetype=markdown
-
-au FileType python set omnifunc=pythoncomplete#Complete
-let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone,longest,preview
-
-
-let g:Tex_DefaultTargetFormat='pdf'
-map <f2> :w<cr><leader>ll
 
 set wrap lbr
 vmap <silent> k gk
@@ -42,3 +28,7 @@ nmap <silent> k gk
 nmap <silent> j gj
 imap <silent> <Up> <C-o>gk
 imap <silent> <Down> <C-o>gj
+
+if exists('+colorcolumn')
+    set cc=80
+endif
