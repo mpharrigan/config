@@ -21,7 +21,9 @@ shopt -s checkwinsize
 
 # configure programs
 eval `$HOME/opt/keychain/keychain --agents ssh --eval id_rsa`
-source $HOME/opt/git/git-prompt.sh
+if [ -f $HOME/opt/git/git-prompt.sh ]; then
+    source $HOME/opt/git/git-prompt.sh
+fi
 export GIT_PS1_SHOWDIRTYSTATE="yup"
 export GIT_PS1_SHOWUNTRACKEDFILES="yup"
 export GIT_PS1_SHOWUPSTREAM="verbose"
