@@ -16,3 +16,4 @@ ln -sf config/_vim .vim
 ln -sf config/_vimrc .vimrc
 ln -sf config/_condarc.yaml .condarc
 ln -sf config/_gitconfig .gitconfig
+ln -sf config/_ideavimrc .ideavimrc
