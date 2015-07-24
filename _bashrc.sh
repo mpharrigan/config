@@ -45,6 +45,7 @@ make_ps1
 # Aliases
 alias ls='ls -lhv --color=auto --group-directories-first'
 alias vi='vim'
+alias savecmd="fc -ln -1 | sed '1s/^[[:space:]]*//'"
 
 
 #vim: tw=75
