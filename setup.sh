@@ -11,7 +11,10 @@ fi
 
 ln -sf config/_bashrc.sh .bashrc
 ln -sf config/_bash_profile.sh .bash_profile
-mv .vim .vim.old
+if [ -e .vim ]; then
+    echo "Backing up .vim"
+    mv .vim .vim.old
+fi
 ln -sf config/_vim .vim
 ln -sf config/_vimrc .vimrc
 ln -sf config/_condarc.yaml .condarc
