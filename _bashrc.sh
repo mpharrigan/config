@@ -42,6 +42,9 @@ PS1="$GREEN\h$NOCOL: $BBLUE\w$NOCOL$RED$GIT$NOCOL\n\\$ "
 }
 make_ps1
 
+# lscolors
+eval "$(dircolors -b)"
+
 # Aliases
 alias ls='ls -lhv --color=auto --group-directories-first'
 alias vi='vim'
