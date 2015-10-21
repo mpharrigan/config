@@ -20,7 +20,10 @@ shopt -s globstar
 shopt -s checkwinsize
 
 # configure programs
-eval `$HOME/opt/keychain/keychain --agents ssh --eval id_rsa`
+if [ -f $HOME/opt/keychain/keychain ]; then
+    eval `$HOME/opt/keychain/keychain --agents ssh --eval id_rsa`
+fi
+
 if [ -f $HOME/opt/git/git-prompt.sh ]; then
     source $HOME/opt/git/git-prompt.sh
 fi
