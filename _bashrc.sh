@@ -19,20 +19,19 @@ HISTFILESIZE=2000
 shopt -s globstar
 shopt -s checkwinsize
 
-# configure programs
+# Keychain
 if [ -f $HOME/opt/keychain/keychain ]; then
     eval `$HOME/opt/keychain/keychain --agents ssh --eval id_rsa`
 fi
 
-if [ -f $HOME/opt/git/git-prompt.sh ]; then
-    source $HOME/opt/git/git-prompt.sh
-fi
+# Git prompt
+source $HOME/config/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE="yup"
 export GIT_PS1_SHOWUNTRACKEDFILES="yup"
 export GIT_PS1_SHOWUPSTREAM="verbose"
 export SLURM_TIME_FORMAT="relative"
 
-# prompt
+# Prompt
 function make_ps1
 {
 local GREEN="\[\033[0;32m\]"
