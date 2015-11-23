@@ -16,6 +16,14 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+# Tab title
+case "$TERM" in
+    xterm*|rxvt*)
+        PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+        ;;
+    *)  ;;
+esac
+
 # shopt
 HISTCONTROL=ignoreboth
 shopt -s histappend
