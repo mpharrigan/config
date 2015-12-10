@@ -34,7 +34,7 @@ shopt -s checkwinsize
 
 # Keychain
 if [ -f $HOME/opt/keychain/keychain ]; then
-    eval `$HOME/opt/keychain/keychain --agents ssh --eval id_rsa`
+    eval `$HOME/opt/keychain/keychain --agents ssh --eval id_rsa_mpharrigan-1`
 fi
 
 # Git prompt
