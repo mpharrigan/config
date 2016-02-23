@@ -20,3 +20,4 @@ ln -sf config/vimrc .vimrc
 ln -sf config/condarc.yaml .condarc
 ln -sf config/gitconfig .gitconfig
 ln -sf config/ideavimrc .ideavimrc
+ln -sf config/vmdrc.tcl .vmdrc
