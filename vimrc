@@ -32,3 +32,6 @@ imap <silent> <Down> <C-o>gj
 if exists('+colorcolumn')
     set cc=80
 endif
+
+set modeline
+set modelines=5
