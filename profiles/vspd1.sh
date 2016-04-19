@@ -3,6 +3,7 @@ export PATH="$HOME/opt/gromacs/bin:$PATH"
 export PATH="$HOME/opt/amber14/bin:$PATH"
 export PATH="$HOME/opt/acpype/bin:$PATH"
 export PATH="$HOME/opt/go/bin:$PATH"
+export PATH="$HOME/opt/ffmpeg/bin:$PATH"
 
 export GOROOT="$HOME/opt/go"
 export GOPATH="$HOME/source/gopath"
