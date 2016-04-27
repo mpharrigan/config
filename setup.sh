@@ -15,9 +15,10 @@ if [ -e .vim ]; then
     echo "Backing up .vim"
     mv .vim .vim.old
 fi
-ln -sf config/vim .vim
-ln -sf config/vimrc .vimrc
+ln -sf config/vim          .vim
+ln -sf config/vimrc        .vimrc
 ln -sf config/condarc.yaml .condarc
-ln -sf config/gitconfig .gitconfig
-ln -sf config/ideavimrc .ideavimrc
-ln -sf config/vmdrc.tcl .vmdrc
+ln -sf config/gitconfig    .gitconfig
+ln -sf config/ideavimrc    .ideavimrc
+ln -sf config/vmdrc.tcl    .vmdrc
+ln -sf config/screenrc     .screenrc
