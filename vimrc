@@ -35,7 +35,3 @@ endif
 
 set modeline
 set modelines=5
-
-" Deal with overzealous defaults from sherlock's /etc/vimrc
-set textwidth=0
-set background=light
