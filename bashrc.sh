@@ -75,5 +75,9 @@ alias ls='ls -lhv --color=auto --group-directories-first'
 alias vi='vim'
 alias savecmd="fc -ln -1 | sed '1s/^[[:space:]]*//'"
 
+alias vspd-up='ssh -fNTML 7680:localhost:7680 vspd'
+alias vspd-status='ssh -TO check vspd'
+alias vspd-down='ssh -TO exit vspd'
+
 
 #vim: tw=75
