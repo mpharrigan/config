@@ -11,7 +11,7 @@ fi
 
 ln -sf config/bashrc.sh .bashrc
 ln -sf config/bash_profile.sh .bash_profile
-if [ -e .vim ]; then
+if [ -d .vim ]; then
     echo "Backing up .vim"
     mv .vim .vim.old
 fi
