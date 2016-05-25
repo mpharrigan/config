@@ -9,6 +9,7 @@ if [ ! -f config/machine.sh ]; then
     exit 1;
 fi
 
+ln -sf config/profile.sh .profile
 ln -sf config/bashrc.sh .bashrc
 ln -sf config/bash_profile.sh .bash_profile
 if [ -d .vim ]; then
