@@ -14,3 +14,5 @@ export LD_LIBRARY_PATH="$AMBERHOME/lib:$LD_LIBRARY_PATH"
 export AMDAPPSDKROOT="$HOME/opt/amdappsdk"
 export OPENCL_VENDOR_PATH="$HOME/opt/amdappsdk/etc/OpenCL/vendors/"
 export LD_LIBRARY_PATH="$HOME/opt/amdappsdk/lib/x86_64/"
+
+export OGRE_DIR="$HOME/opt/ogre/"
