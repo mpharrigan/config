@@ -11,3 +11,5 @@
     ldiff = difftool -y -t latex
 [difftool.latex]
     cmd = latexdiff "$LOCAL" "$REMOTE"
+[diff]
+    tool = meld
