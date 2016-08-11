@@ -13,3 +13,5 @@
     cmd = latexdiff "$LOCAL" "$REMOTE"
 [credential]
 	helper = cache --timeout=3600
+[diff]
+    tool = meld
