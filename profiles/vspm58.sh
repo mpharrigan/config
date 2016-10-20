@@ -16,3 +16,5 @@ export OPENCL_VENDOR_PATH="$HOME/opt/amdappsdk/etc/OpenCL/vendors/"
 export LD_LIBRARY_PATH="$HOME/opt/amdappsdk/lib/x86_64/"
 
 export OGRE_DIR="$HOME/opt/ogre/"
+
+export SCHRODINGER="$HOME/opt/schrodinger/"
