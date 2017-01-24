@@ -13,7 +13,11 @@ export LD_LIBRARY_PATH="$AMBERHOME/lib:$LD_LIBRARY_PATH"
 # AMD App SDK
 export AMDAPPSDKROOT="$HOME/opt/amdappsdk"
 export OPENCL_VENDOR_PATH="$HOME/opt/amdappsdk/etc/OpenCL/vendors/"
-export LD_LIBRARY_PATH="$HOME/opt/amdappsdk/lib/x86_64/"
+export LD_LIBRARY_PATH="$HOME/opt/amdappsdk/lib/x86_64:$LD_LIBRARY_PATH"
+
+# CUDA
+export PATH="/usr/local/cuda-8.0/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH"
 
 export OGRE_DIR="$HOME/opt/ogre/"
 
