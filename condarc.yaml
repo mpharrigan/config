@@ -1,3 +1,4 @@
 channels:
-    - omnia
     - defaults
+    - conda-forge
+    - omnia

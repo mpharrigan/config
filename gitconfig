@@ -11,3 +11,7 @@
     ldiff = difftool -y -t latex
 [difftool.latex]
     cmd = latexdiff "$LOCAL" "$REMOTE"
+[credential]
+	helper = cache --timeout=3600
+[diff]
+    tool = meld
