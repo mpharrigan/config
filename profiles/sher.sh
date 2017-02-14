@@ -4,5 +4,8 @@ PATH=$HOME/opt/git/bin:$PATH
 PATH=$HOME/opt/gromacs/bin:$PATH
 export PATH
 
-module load gcc/4.9.1
+module load gcc
 module load cmake
+module load jre
+module load scala
+
