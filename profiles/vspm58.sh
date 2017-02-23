@@ -1,4 +1,4 @@
-export PATH="$HOME/opt/miniconda3/bin:$PATH"
+export PATH="$HOME/opt/miniconda3-2016-09-20/bin:$PATH"
 export PATH="$HOME/opt/vmd/bin:$PATH"
 export PATH="$HOME/opt/gromacs/bin:$PATH"
 export PATH="$HOME/opt/pycharm/bin:$PATH"
