@@ -1,6 +1,9 @@
 # Slurm-status
 export PATH="$HOME/source/slurm-status:$PATH"
 
+# Miniconda python
+export PATH="$HOME/opt/miniconda/bin:$PATH"
+
 # Amber
 export AMBERHOME="$HOME/opt/amber16"
 export PATH="$AMBERHOME/bin:$PATH"
