@@ -8,3 +8,6 @@ export PATH=$HOME/source/slurm-status:$PATH
 export AMBERHOME="$HOME/opt/amber16"
 export PATH="$AMBERHOME/bin:$PATH"
 export LD_LIBRARY_PATH="$AMBERHOME/lib:$LD_LIBRARY_PATH"
+
+# Activate "basic" python venv
+source $HOME/pyvenvs/basic/bin/activate
