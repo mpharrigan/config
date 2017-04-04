@@ -10,6 +10,12 @@ export AMBERHOME="$HOME/opt/amber16"
 export PATH="$AMBERHOME/bin:$PATH"
 export LD_LIBRARY_PATH="$AMBERHOME/lib:$LD_LIBRARY_PATH"
 
+# Plumed
+PLUMED_HOME="$HOME/plumed-2.3.1"
+export PLUMED_KERNEL="$PLUMED_HOME/lib/libplumedKernel.so"
+export LD_LIBRARY_PATH="$PLUMED_HOME/lib:$LD_LIBRARY_PATH"
+export PATH="$PLUMED_HOME/bin:$PATH"
+
 # AMD App SDK
 export AMDAPPSDKROOT="$HOME/opt/amdappsdk"
 export OPENCL_VENDOR_PATH="$HOME/opt/amdappsdk/etc/OpenCL/vendors/"
