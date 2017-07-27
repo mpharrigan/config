@@ -79,5 +79,10 @@ alias vspd-up='ssh -fNTML 7680:localhost:7680 vspd'
 alias vspd-status='ssh -TO check vspd'
 alias vspd-down='ssh -TO exit vspd'
 
+alias xs-up='ssh -fNTML 7681:localhost:7681 xs'
+alias vspd-status='ssh -TO check xs'
+alias vspd-down='ssh -TO exit xs'
+
+
 
 #vim: tw=75
