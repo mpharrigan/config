@@ -4,3 +4,4 @@
 #export CONFIG_MACHINE='tte-tux'
 #export CONFIG_MACHINE='vspd1'
 #export CONFIG_MACHINE='vspm58'
+#export CONFIG_MACHINE='jonathan-vm'

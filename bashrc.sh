@@ -17,9 +17,12 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # Completion on homebrew
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-      . `brew --prefix`/etc/bash_completion
-      . /usr/local/git/contrib/completion/git-completion.bash
+command -v brew >/dev/null
+if [ $? -eq 0 ]; then
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+          . `brew --prefix`/etc/bash_completion
+          . /usr/local/git/contrib/completion/git-completion.bash
+    fi
 fi
 
 # Tab title
