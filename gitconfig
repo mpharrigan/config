@@ -3,7 +3,7 @@
 	autocrlf = input
 [user]
 	name = Matthew Harrigan
-	email = harrigan@stanford.edu
+	email = matt.harrigan@rigetti.com
 [push]
 	default = simple
 [alias]

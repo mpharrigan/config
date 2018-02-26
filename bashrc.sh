@@ -16,6 +16,12 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+# Completion on homebrew
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+      . `brew --prefix`/etc/bash_completion
+      . /usr/local/git/contrib/completion/git-completion.bash
+fi
+
 # Tab title
 case "$TERM" in
     xterm*|rxvt*)
@@ -29,12 +35,12 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
-shopt -s globstar
+shopt -s globstar 2>/dev/null
 shopt -s checkwinsize
 
 # Keychain
 if [ -f $HOME/opt/keychain/keychain ]; then
-    eval `$HOME/opt/keychain/keychain --agents ssh --eval id_rsa_mpharrigan-1`
+    eval `$HOME/opt/keychain/keychain --agents ssh --eval id_rsa`
 fi
 
 # Git prompt
@@ -57,8 +63,7 @@ PS1="$GREEN\h$NOCOL: $BBLUE\w$NOCOL$RED$GIT$NOCOL\n\\$ "
 }
 make_ps1
 
-# lscolors
-eval "$(dircolors -b)"
+command -v dircolors >/dev/null && eval "$(dircolors -b)"
 
 # manpage colors
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
@@ -71,18 +76,11 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 
 
 # Aliases
-alias ls='ls -lhv --color=auto --group-directories-first'
+command -v gls >/dev/null && \
+    alias ls='gls -lhv --color=auto --group-directories-first' || \
+    alias ls='ls -lhv --color=auto --group-directories-first'
+
 alias vi='vim'
 alias savecmd="fc -ln -1 | sed '1s/^[[:space:]]*//'"
-
-alias vspd-up='ssh -fNTML 7680:localhost:7680 vspd'
-alias vspd-status='ssh -TO check vspd'
-alias vspd-down='ssh -TO exit vspd'
-
-alias xs-up='ssh -fNTML 7681:localhost:7681 xs'
-alias xs-status='ssh -TO check xs'
-alias xs-down='ssh -TO exit xs'
-
-
 
 #vim: tw=75
