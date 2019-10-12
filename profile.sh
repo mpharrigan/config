@@ -1,4 +1,3 @@
 # .profile
 
-[ -f "$HOME/config/machine.sh" ]                  && . "$HOME/config/machine.sh"
-[ -f "$HOME/config/profiles/$CONFIG_MACHINE.sh" ] && . "$HOME/config/profiles/$CONFIG_MACHINE.sh"
+[ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]  && . "$HOME/miniconda3/etc/profile.d/conda.sh"
