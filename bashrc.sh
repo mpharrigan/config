@@ -85,5 +85,6 @@ command -v gls >/dev/null && \
 
 alias vi='vim'
 alias savecmd="fc -ln -1 | sed '1s/^[[:space:]]*//'"
+alias gb='git branch -vv --sort=committerdate'
 
 #vim: tw=75
