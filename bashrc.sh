@@ -17,13 +17,7 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # Completion on homebrew
-command -v brew >/dev/null
-if [ $? -eq 0 ]; then
-    if [ -f `brew --prefix`/etc/bash_completion ]; then
-          . `brew --prefix`/etc/bash_completion
-          . /usr/local/git/contrib/completion/git-completion.bash
-    fi
-fi
+. $HOME/config/git-completion.bash
 
 # Tab title
 case "$TERM" in
@@ -85,5 +79,9 @@ command -v gls >/dev/null && \
 
 alias vi='vim'
 alias savecmd="fc -ln -1 | sed '1s/^[[:space:]]*//'"
+alias gb='git branch -vv --sort=committerdate'
+alias ff='git merge --ff-only'
+
+. "$HOME/.cargo/env"
 
 #vim: tw=75
