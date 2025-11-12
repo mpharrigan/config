@@ -80,8 +80,5 @@ command -v gls >/dev/null && \
 alias vi='vim'
 alias savecmd="fc -ln -1 | sed '1s/^[[:space:]]*//'"
 alias gb='git branch -vv --sort=committerdate'
-alias ff='git merge --ff-only'
-
-. "$HOME/.cargo/env"
 
 #vim: tw=75
